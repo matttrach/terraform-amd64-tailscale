@@ -1,7 +1,7 @@
 locals {
   address = var.address
   user    = var.user
-  version = var.version
+  version = var.vs
 }
 
 resource "null_resource" "deploy_tailscale" {

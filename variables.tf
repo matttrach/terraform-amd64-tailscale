@@ -8,7 +8,7 @@ variable "user" {
   description = "The name of the user to login as."
 }
 
-variable "version" {
+variable "vs" {
   type        = string
   description = "the version number of tailscale to deploy"
   default     = "1.32.2_amd64"
