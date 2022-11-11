@@ -11,6 +11,9 @@ resource "tailscale_tailnet_key" "key" {
 }
 
 resource "null_resource" "deploy_tailscale" {
+  depends_on = [
+    tailscale_tailnet_key.key,
+  ]
   connection {
     type        = "ssh"
     user        = local.user
