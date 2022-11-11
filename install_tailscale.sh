@@ -23,3 +23,5 @@ chmod +x /usr/local/bin/tailscaled
 
 mv /root/tailscale.defaults /usr/local/tailscale/tailscale.defaults
 mv /root/tailscale.service  /etc/systemd/system/tailscale.service
+touch /usr/local/tailscale/tailscaled.state
+
