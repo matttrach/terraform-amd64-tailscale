@@ -21,3 +21,4 @@ CacheDirectoryMode=0750
 Type=notify
 
 [Install]
+WantedBy=systemd-journald.service
